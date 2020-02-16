@@ -1,0 +1,108 @@
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2px;
+    font-size: 56px;
+}
+
+.uc, .pn, .em, .resume {
+    font-size: 20px;
+}
+
+
+.profile-picture {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.profile, .contact {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+
+.links {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 16px;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 4px;
+}
+
+.links a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+body {
+    background: linear-gradient(to right,  rgba(42,52,57,1), rgba(211,211,211,1), rgba(42,52,57,1));
+}
+
+.bio, .projects, .project1, .project2 {
+    margin-inline: 5px;
+    font-size: 18px;
+}
+
+.wrapper {
+    background-color: rgba(50,50,50,1);
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    box-shadow: 10px 10px #111111;
+}
+
+.top {
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid {
+    height: 10%;
+    float: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top, .mid {
+    background-color: rgba(150,150,150,1);
+    margin: 6px;
+    flex: 1;
+    display: flex;
+    }
+
+.below {
+    background-color: rgba(150,150,150,1);
+    margin: 6px;
+    height: 70%;
+    flex: 1;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.PList li {
+    margin: 10px 0;
+}
