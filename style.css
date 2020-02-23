@@ -60,8 +60,12 @@ body {
 }
 
 .bio, .projects, .project1, .project2 {
-    margin-inline: 5px;
+    margin-inline: 10px;
     font-size: 18px;
+}
+
+.bio, .links{
+    text-align: center;
 }
 
 .wrapper {
