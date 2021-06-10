@@ -12,7 +12,7 @@ html, body {
 .name {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2px;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 .uc, .pn, .em, .resume {
@@ -34,6 +34,11 @@ html, body {
 
 }
 
+.CS {
+	width:100%;
+	text-align:center;
+	font-size:18px;
+}
 
 .links {
     list-style: none;
@@ -59,14 +64,27 @@ body {
     background: linear-gradient(to right,  rgba(42,52,57,1), rgba(211,211,211,1), rgba(42,52,57,1));
 }
 
-.bio, .projects, .project1, .project2 {
-    margin-inline: 10px;
+.projects {
+	width:100%;
+	text-align:center;
+    margin-inline: 10px!important;
+	font-size: 22px;
+	
+}
+
+.bio,  .project {
+    margin-inline: 10px!important;
     font-size: 18px;
 }
 
 .bio, .links{
     text-align: center;
 }
+
+.project {
+	text-indent: 20px;
+}
+
 
 .wrapper {
     background-color: rgba(50,50,50,1);
@@ -107,6 +125,3 @@ body {
     justify-content: center;
 }
 
-.PList li {
-    margin: 10px 0;
-}

@@ -15,11 +15,14 @@
         
         <div class="profile">
           <h1 class="name">Erik Otto Kriz</h1>
-          <p class="CS"> CSE Student </p>
+          <p class="CS"> Bachelor of Science in <br> Computer Science and
+		  Engineering <br>
+		  <span>Focus: Cybersecurity  Minor: Mathematics </span>
+		  </p>
           <p class="uc"> University of Connecticut </p>
         </div>
 
-        <img class="profile-picture" src="img/SelfShot.jpeg" width="300" />
+        <img class="profile-picture" src="img/Profile.jpeg" width="300" />
 
         <div class="contact">
           <p class="pn"> Phone: 1(203)-837-6905 </p>
@@ -32,8 +35,7 @@
 
       <div class="mid">
         <p class="bio">
-          I am a Computer Science and Engineering major and Mathematics minor
-          at the University of Connecticutt, class of 2021.
+          I am a new graduate seeking opportunities in Network and Computer Security related fields in order to further my abilities in the protection of information, both stationary and in transit.
         </p>
         <ul class="links">
           <li>
@@ -47,38 +49,85 @@
     
       <div class="below">
         <p class="projects">
-          Below are a series of projects I've completed over the course of my schooling that I believe 
-          showcase my various skills within Computer Science and Computer Engineering. 
+          Below are projects I've completed which I believe 
+          showcase my skills within Computer Science, Engineering, and
+		  Cybersecurity. 
         </p>
-        
-        <p class="project1">
-          First is a project I had done involving dynamic programming. The object of this 
+       
+		<p class="project">
+			<a href="docs/DNSPoisoning.pdf" target="_blank">DNS Poisoning</a>:
+			In this project, I have three virtual machines acting as a user,
+			that user's DNS resolver, and a malicious attacker. This attacker
+			is able to respond to DNS queries form the resolver by saying that
+			any url is directed to its IP address. In this way, the attacker
+			can impersonate any website to obtain data form the user.
+		</p>
+
+		<p class="project">
+			<a href="docs/CSRF_XSSLab.pdf" target="_blank">XSS and CSRF
+			Attacks</a>: This project shows how I used Cross Site Scripting and
+			Cross Site Referencing attacks to change user data within a sample social
+			media site. In both of these cases, I take advantage of the fact
+			that users have authenticated cookies for the social media site,
+			and then have those users load scripts which use those
+			authenticated cookies to change their social media page in ways
+			that only they should be able to. 
+		</p>
+
+		
+		<p class="project">
+			<a href="docs/TextEditorC++.pdf" target="_blank">Text Editor</a>:
+			This project contains a console-based text editor made entirely
+			using C++. The system I built off of a simple display library is
+			able to display and edit files, as well as implementing core editor
+			functions such as find/replace and Undo/Redo. This system uses a Chain of
+			Responsibilty as its keystroke handler. At its core this system
+			consists of 3 complex classes, one to old the opened file's data,
+			one to display that data, and one to edit the data and/or the view
+			based on user input. These classes are created separately and
+			contain bridges to one another.
+		</p>
+
+		<p class="project">
+			<a href="docs/AuthenticatedEncryption.pdf" target="_blank">Authenticated Text
+			Decryption</a>: With this project, I demonstrate security concepts
+			for a website's database. On this website, authenticated users can
+			create text posts for all other users, authenticated or not, to
+			see. A user's authenticity is checked by looking at said user's
+			session/cookie and if they have a profile associated within them. Upon a text post's creation, authenticated users can choose for the post to
+			be encrypted or not. If they do, the text post is stored in the
+			site's database as its own ciphertext. In this case, when an
+			authenticated user tries to view the post, only then will the
+			ciphertext in the database be decrypted and the plaintext post
+			shown to the user. If a non-authenticated user attempts to view the
+			encrypted post, they will instead see only the ciphertext. If a
+			post is non-encrypted, then non-authenticated users can also see
+			the plaintext.
+			the post. 
+
+		</p>
+
+        <p class="project">
+        <a href="docs/Chopsticks.pdf" target="_blank">Chopsticks</a>
+          : This project is centered around dynamic programming. The object of this 
           program was to, once run, create a game tree for the game "Chopsticks". It did this 
           using dynamic programming. Once the entire game tree was built from the bottom, up, this 
           program would then initiate a game of chopsticks. After each round with the computer and player
           taking a turn, the program would check the game tree to see if it was guarenteed to win, if a 
-          tie was possible, or if the player would surely win. Once a game was over, another would start. 
+          tie was possible, or if the player would surely win. Once a game was over, another would start.  
+            <a href="https://www.wikihow.com/Play-Chopsticks"
+			target="_blank">Rules of Chopsticks</a>
         </p>
 
-        <p class="project2">
-          This project shows my skill at designing and creating circuits using logic gates by creating a circuit
+        <p class="project">
+          <a href="docs/sequenceDetection.pdf" target="_blank">Sequence Detection</a>
+          : This project shows my skill at designing and creating circuits using logic gates by creating a circuit
           that detects two specific key strings within a sequence of input bits. It does this by physically 
           creating a state machine where each state represents different progressions within the sequences.
           The sequences to be detected are both '0001' and '1110'. When the machine detects that one of 
           these strings has been processed through the machine, a detection LED lights up.
         </p>
 
-        <ul class="PList">
-          <li>
-          <a href="docs/Chopsticks.pdf" target="_blank">Chopsticks Report</a>
-          </li>
-          <li>
-            <a href="https://www.wikihow.com/Play-Chopsticks" target="_blank">Chopsticks Rules</a>
-          </li>
-          <li>
-          <a href="docs/sequenceDetection.pdf" target="_blank">Sequence Detection</a>
-          </li>
-        </ul>
       </div>
     </div>
   </body>
